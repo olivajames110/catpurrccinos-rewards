@@ -1,0 +1,72 @@
+h1,
+h2,
+h3 {
+	color: #fff;
+	text-shadow: 0px 2px 4px #00000042;
+}
+
+button {
+	padding: 24px 16px;
+	font-size: 20px;
+	border: none;
+	border-radius: 2px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #efefef;
+	cursor: pointer;
+	// color: #333;
+	span {
+		// color: #333;
+		margin: 0 5px;
+		text-shadow: none;
+	}
+	.icon-wrapper {
+		position: relative;
+		display: flex;
+		svg {
+			display: block;
+			height: 24px;
+		}
+	}
+	&.blue {
+		background: #2da9e0;
+		color: #fff !important;
+		&:hover {
+			background: #2e9ac8;
+		}
+	}
+	&.small {
+		padding: 8px;
+		font-size: 14px !important;
+	}
+}
+
+input {
+	font-size: 20px;
+	padding: 24px 16px;
+	position: relative;
+	display: block;
+	border: none;
+	border-radius: 2px;
+}
+
+.PhoneInputCountrySelectArrow {
+	color: #fff;
+	opacity: 1 !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.items-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.current-points-container {
+		top: -65px;
+	}
+
+	button.nav-link__title {
+		font-size: 15px !important;
+	}
+}

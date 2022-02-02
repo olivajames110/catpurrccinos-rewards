@@ -1,0 +1,41 @@
+.screen {
+  position: relative;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.screen h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.screen .return-button-wrapper {
+  position: absolute;
+  top: -20px;
+  left: 32px;
+}
+
+.screen .return-button-wrapper button {
+  background: transparent;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.screen .return-button-wrapper button svg {
+  height: 14px;
+}
+
+.screen .screen-content {
+  padding: 25px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .screen .return-button-wrapper {
+    top: -60px;
+  }
+  .screen h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+/*# sourceMappingURL=Screen.css.map */

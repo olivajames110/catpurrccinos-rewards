@@ -1,0 +1,74 @@
+.store-item-wrapper {
+  background: #fff;
+  margin: 10px;
+  border-radius: 2px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.store-item-wrapper h2 {
+  font-size: 16px;
+  color: #333;
+  text-shadow: none;
+  margin-bottom: 0;
+}
+
+.store-item-wrapper .store-item__description {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.store-item-wrapper .store-item__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 0 2px;
+}
+
+.store-item-wrapper .store-item__points #price {
+  position: relative;
+}
+
+.store-item-wrapper .store-item__points #points {
+  color: #2da9e0;
+  margin: 0 auto;
+}
+
+.store-item-wrapper button {
+  opacity: .55;
+}
+
+.store-item-wrapper.eligable #price::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: calc(100% + 6px);
+  height: 1px;
+  background-color: #2daae0da;
+}
+
+.store-item-wrapper.eligable button {
+  opacity: 1;
+}
+
+.modal .icon-wrapper {
+  position: relative;
+}
+
+.modal .icon-wrapper svg {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=StoreItem.css.map */

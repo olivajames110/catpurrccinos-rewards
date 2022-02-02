@@ -1,0 +1,10 @@
+.outer-content-wrapper {
+  max-width: 1310px;
+  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+  position: relative;
+  -webkit-transition: 240ms ease;
+  transition: 240ms ease;
+}
+/*# sourceMappingURL=ContentContainer.css.map */

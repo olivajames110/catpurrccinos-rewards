@@ -1,0 +1,28 @@
+#vertical-navigation {
+  background-color: var(--purpleSecondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--sideNavWidth);
+  padding-top: calc(var(--headerHeight) + 0px);
+  z-index: 60;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#vertical-navigation #profile-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#vertical-navigation #profile-link span {
+  margin-top: 5px;
+}
+/*# sourceMappingURL=VerticalNavigation.css.map */

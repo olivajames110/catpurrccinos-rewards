@@ -1,0 +1,117 @@
+.phone-number-input-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.phone-number-input-container input {
+  width: 300px;
+}
+
+.phone-number-input-container button {
+  margin-left: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.phone-number-input-container .error-message {
+  color: white;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+.keyboard-container {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.keyboard-container .delete {
+  font-size: 16px !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.keyboard-container .zero {
+  background: rgba(57, 57, 57, 0.366);
+  color: white;
+}
+
+.keyboard-container .non-zero-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.keyboard-container .number-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(24, 24, 24, 0.45);
+  color: white;
+  border: 1px solid #ffffff52;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #ffffffc7;
+  -webkit-box-shadow: inset 0px 0px 3px 0px #ffffff0d;
+          box-shadow: inset 0px 0px 3px 0px #ffffff0d;
+  -webkit-transition: 210ms ease;
+  transition: 210ms ease;
+}
+
+.keyboard-container .number-item.background {
+  background-color: rgba(205, 205, 205, 0.544) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .phone-number-input-container {
+    width: unset !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=PhoneNumberInput.css.map */

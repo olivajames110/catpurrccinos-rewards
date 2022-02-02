@@ -1,0 +1,79 @@
+.current-points-container {
+	padding: 10px 0;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	top: -80px;
+	right: 25px;
+	font-size: 14px;
+	/* background: #bb804b; */
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border: 3px solid white;
+	font-weight: bold;
+	box-shadow: inset 0 0 5px 2px #0000002e;
+	font-size: 16px;
+	padding: 0 10px;
+	color: white;
+	background: rgb(130, 72, 19);
+	background: -moz-linear-gradient(183deg, rgba(130, 72, 19, 1) 0%, rgba(187, 128, 75, 1) 100%);
+	background: -webkit-linear-gradient(183deg, rgba(130, 72, 19, 1) 0%, rgba(187, 128, 75, 1) 100%);
+	background: linear-gradient(183deg, rgba(130, 72, 19, 1) 0%, rgba(187, 128, 75, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#824813", endColorstr="#bb804b", GradientType=1);
+	#value {
+		position: relative;
+		font-weight: bold;
+		font-size: 22px;
+		margin-top: 5px;
+		background: #616c70;
+		width: 130px;
+		height: 42px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: -32px;
+		border: 2px solid #bcb8a8;
+		&::after,
+		&::before {
+			content: '';
+			background: url(https://digitalmarketing.blob.core.windows.net/10030/images/items/image719885.png);
+			position: absolute;
+			width: 14px;
+			height: 13px;
+			background-size: contain;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&::after {
+			right: 14px;
+		}
+		&::before {
+			left: 14px;
+		}
+	}
+	#number {
+		position: absolute;
+		bottom: -30px;
+		font-size: 14px;
+		width: 160px;
+		cursor: pointer;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 35px;
+		height: 13px;
+		background: #fff;
+		box-shadow: inset 0 0 5px 2px #0000002e;
+		top: 0;
+		left: -15px;
+		transform: rotate(42deg);
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+}

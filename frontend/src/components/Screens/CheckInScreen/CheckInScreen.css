@@ -1,0 +1,136 @@
+#check-in-section {
+  position: relative;
+  text-align: center;
+}
+
+#check-in-section .check-in-success {
+  position: relative;
+  background-color: #fff;
+  max-width: 480px;
+  border-radius: 8px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#check-in-section .check-in-success h1,
+#check-in-section .check-in-success h2,
+#check-in-section .check-in-success h3,
+#check-in-section .check-in-success div,
+#check-in-section .check-in-success span,
+#check-in-section .check-in-success p {
+  text-shadow: none;
+}
+
+#check-in-section .check-in-success .success__header {
+  background-color: #728f99;
+  padding: 20px;
+}
+
+#check-in-section .check-in-success .success__header h1 {
+  font-size: 32px;
+  line-height: 30px;
+}
+
+#check-in-section .check-in-success .success__header p {
+  color: #fff;
+}
+
+#check-in-section .check-in-success .success__header .icon-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+#check-in-section .check-in-success .success__header .icon-wrapper svg {
+  display: block;
+  height: 50px;
+  fill: #fff;
+}
+
+#check-in-section .check-in-success .success__body {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#check-in-section .check-in-success .success__body .new-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+#check-in-section .check-in-success .success__body .new-points h3,
+#check-in-section .check-in-success .success__body .new-points h3 span {
+  color: #616c70;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+#check-in-section .check-in-success .success__body .new-points span {
+  color: #606161;
+  text-shadow: none;
+  font-size: 16px;
+  opacity: .8;
+}
+
+#check-in-section .check-in-success .success__body .stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid rgba(0, 0, 0, 0.217);
+  padding-top: 20px;
+}
+
+#check-in-section .check-in-success .success__body .stats .stat-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#check-in-section .check-in-success .success__body .stats .stat-item .stat-item__value {
+  font-size: 18px;
+  color: #333;
+}
+
+#check-in-section .check-in-success .success__body .stats .stat-item .stat-item__description {
+  font-size: 15px;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .phone-number-input-container button {
+    margin-top: 5px;
+  }
+  .phone-number-input-container .error-message {
+    bottom: -54px !important;
+    left: 50% !important;
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=CheckInScreen.css.map */
