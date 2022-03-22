@@ -5,8 +5,15 @@
 }
 
 .screen h1 {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 32px;
+  margin-top: 60px;
+  line-height: 1em;
+}
+
+.screen .screen__title-desc {
+  color: #ffffff;
+  text-shadow: 0px 2px 4px #00000042;
+  font-weight: 300;
 }
 
 .screen .return-button-wrapper {
@@ -27,15 +34,5 @@
 
 .screen .screen-content {
   padding: 25px 0;
-}
-
-@media only screen and (max-width: 600px) {
-  .screen .return-button-wrapper {
-    top: -60px;
-  }
-  .screen h1 {
-    font-size: 32px;
-    line-height: 34px;
-  }
 }
 /*# sourceMappingURL=Screen.css.map */

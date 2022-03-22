@@ -1,3 +1,7 @@
+#home-section h3 {
+  font-size: 18px;
+}
+
 .home-screen-inner-wrapper {
   position: relative;
   text-align: center;
@@ -20,7 +24,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -31,7 +35,16 @@
   margin: 8px;
 }
 
+.home-screen-inner-wrapper .home-screen__buttons-container .button-wrapper button {
+  color: #3f4548;
+  padding: 24px 32px;
+}
+
 .mailing-list-container {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,46 +54,73 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
+  font-weight: 400;
 }
 
 .mailing-list-container button {
-  font-size: 15px;
+  font-size: 14px;
   background-color: transparent;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   text-decoration: underline;
   color: #ffffff;
-  padding: 15px 10px;
+  padding: 0;
+  margin-left: 8px;
 }
 
 .email-modal {
   background-color: #f9f8f7;
-  width: 92vh !important;
-  max-width: unset;
+  width: 95%;
+  max-width: 600px;
 }
 
 .email-modal .cancel {
   background-color: #f9f8f7 !important;
+  z-index: 111111;
 }
 
 .email-modal .modal__content {
-  padding-bottom: 0;
+  padding: 30px;
 }
 
 .email-modal .modal__content h2 {
-  margin-top: -30px;
-  margin-bottom: -15px;
   z-index: 111;
   position: relative;
   font-size: 24px;
 }
 
-.email-modal #email-iframe {
+.email-modal .iframe-wrapper {
+  overflow: hidden;
+  height: 540px;
+}
+
+.email-modal .iframe-wrapper #email-iframe {
   border: none;
-  height: 640px;
+  width: 100%;
+}
+
+.check-in-not-valid {
+  position: relative;
+}
+
+.check-in-not-valid .unavailable {
+  color: #fff;
+  position: absolute;
+  bottom: -25px;
+  font-weight: 400;
+  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+.check-in-not-valid .check-in-btn {
+  position: relative;
+  opacity: 0.85;
 }
 
 @media only screen and (max-width: 600px) {

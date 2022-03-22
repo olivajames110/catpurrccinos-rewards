@@ -1,0 +1,120 @@
+@media only screen and (max-width: 600px) {
+  //Loader
+  .loader-wrapper {
+    .loader-text {
+      font-size: 14px !important;
+    }
+  }
+  //Header
+  header {
+    .return-button-wrapper button {
+      padding: 4px 0px !important;
+      background: #2da9e0a1;
+    }
+
+    .header-inner-wrapper #logo {
+      &.logged-in.active {
+        left: 10px !important;
+        top: 50px !important;
+        img {
+          display: none !important;
+        }
+      }
+      img {
+        width: 85px !important;
+      }
+    }
+    .current-points-container {
+      transform: scale(0.7);
+      top: 0;
+      right: 0;
+    }
+    .logout-warning {
+      font-size: 11px !important;
+    }
+  }
+
+  .app-body-wrapper {
+    align-items: baseline !important;
+    overflow: scroll !important;
+    padding-top: 70px;
+  }
+
+  .screen {
+    .return-button-wrapper {
+      top: -60px;
+    }
+    h1 {
+      font-size: 24px !important;
+      // margin-top: 0px !important;
+      margin-top: 70px !important;
+    }
+    .screen__title-desc {
+      padding: 0 20px;
+      // font-size: 12px;
+    }
+  }
+
+  .phone-number-input-container {
+    font-size: 14px;
+    input {
+      padding: 16px 12px !important;
+      font-size: inherit;
+      width: fit-content !important;
+    }
+    button {
+      padding: 16px 12px !important;
+      font-size: 14px;
+      margin-top: 0 !important;
+    }
+  }
+
+  #home-section {
+    margin-top: -70px !important;
+  }
+  //Home
+  main {
+    h1 {
+      font-size: 28px !important;
+    }
+    #home-section {
+      margin-top: 0 !important;
+      p.screen__title-desc {
+        font-weight: 300 !important;
+        font-size: 14px;
+      }
+      .home-screen__buttons-container {
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+    //Store
+    #store__sub-nav-links {
+      font-size: 12px;
+      button {
+        font-size: inherit !important;
+        padding: 8px 3px !important;
+      }
+    }
+
+    .items-container {
+      // flex-wrap: wrap;
+      overflow-y: scroll;
+      justify-content: flex-start;
+      margin-right: -10px;
+      margin-left: -10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 30px;
+      scrollbar-color: #ffffff;
+      .store-item-wrapper {
+        flex-shrink: 0;
+        flex-basis: 200px;
+      }
+    }
+  }
+  #user-profile-section .screen-content {
+    padding: 20px 20px;
+  }
+}

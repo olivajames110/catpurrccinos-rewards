@@ -1,92 +1,93 @@
 .phone-number-input-container {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	width: max-content;
-	input {
-		width: 300px;
-	}
-	button {
-		margin-left: 5px;
-		width: max-content;
-	}
-	.error-message {
-		color: white;
-		position: absolute;
-		bottom: -25px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 100%;
-	}
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: max-content;
+  input {
+    width: 300px;
+  }
+  button {
+    margin-left: 5px;
+    width: max-content;
+  }
+  .error-message {
+    color: white;
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 12px;
+  }
 }
 
 .keyboard-container {
-	position: relative;
-	width: 290px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	transform: translateY(20px);
-	.delete {
-		// position: absolute;
-		// right: -110px;
-		// top: 0;
-		font-size: 16px !important;
-		background-color: transparent !important;
-		border: none !important;
-	}
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(20px);
+  .delete {
+    // position: absolute;
+    // right: -110px;
+    // top: 0;
+    font-size: 16px !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
 
-	.zero {
-		background: rgba(57, 57, 57, 0.366);
-		color: white;
-	}
-	.non-zero-numbers {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		// display: grid;
-		// grid-template-columns: 1fr 1fr 1fr;
-		// .number-item {
-		// 	background: rgba(24, 24, 24, 0.45);
-		// 	color: white;
-		// 	border: 1px solid #ffffff52;
-		// 	&:hover {
-		// 		background: rgba(135, 134, 134, 0.65);
-		// 	}
-		// }
-	}
-	.number-item {
-		width: 80px;
-		height: 80px;
-		border-radius: 50px;
-		display: flex;
-		align-items: center;
-		margin: 5px;
-		justify-content: center;
-		background: rgba(24, 24, 24, 0.45);
-		color: white;
-		border: 1px solid #ffffff52;
-		font-size: 22px;
-		font-weight: bold;
-		color: white;
-		border: 1px solid #ffffffc7;
-		box-shadow: inset 0px 0px 3px 0px #ffffff0d;
-		transition: 210ms ease;
-		&.background {
-			background-color: rgba(205, 205, 205, 0.544) !important;
-		}
-		// &:hover {
-		// 	background: rgba(135, 134, 134, 0.65);
-		// }
-	}
+  .zero {
+    background: rgba(57, 57, 57, 0.366);
+    color: white;
+  }
+  .non-zero-numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // .number-item {
+    // 	background: rgba(24, 24, 24, 0.45);
+    // 	color: white;
+    // 	border: 1px solid #ffffff52;
+    // 	&:hover {
+    // 		background: rgba(135, 134, 134, 0.65);
+    // 	}
+    // }
+  }
+  .number-item {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    background: rgba(24, 24, 24, 0.45);
+    color: white;
+    border: 1px solid #ffffff52;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #ffffffc7;
+    box-shadow: inset 0px 0px 3px 0px #ffffff0d;
+    transition: 210ms ease;
+    &.background {
+      background-color: rgba(205, 205, 205, 0.544) !important;
+    }
+    // &:hover {
+    // 	background: rgba(135, 134, 134, 0.65);
+    // }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-	.phone-number-input-container {
-		width: unset !important;
-		flex-wrap: wrap;
-	}
+  .phone-number-input-container {
+    width: unset !important;
+    flex-wrap: wrap;
+  }
 }

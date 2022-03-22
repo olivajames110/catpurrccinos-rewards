@@ -1,64 +1,143 @@
 .store-item-wrapper {
-	background: #fff;
-	margin: 10px;
-	border-radius: 2px;
-	padding: 10px 8px;
-	text-align: center;
+  background: #fff;
+  margin: 10px;
+  border-radius: 2px;
+  padding: 15px;
+  text-align: center;
+  width: 180px;
+  height: fit-content;
+  flex-grow: 1;
+  max-width: 280px;
+  // padding: 20px 10px;
+  h2 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    // margin-bottom: 15px;
+    text-shadow: none;
+    margin-bottom: 0;
+  }
 
-	h2 {
-		font-size: 16px;
-		color: #333;
-		text-shadow: none;
-		margin-bottom: 0;
-	}
-
-	.store-item__description {
-		font-size: 13px;
-		line-height: 18px;
-	}
-	.store-item__points {
-		display: flex;
-		justify-content: center;
-		margin-top: 12px;
-		margin-bottom: 5px;
-		font-weight: bold;
-		font-size: 13px;
-		padding: 0 2px;
-		#price {
-			position: relative;
-		}
-		#points {
-			color: #2da9e0;
-			margin: 0 auto;
-		}
-	}
-	button {
-		opacity: .55;
-	}
-	&.eligable {
-		#price::after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: -3px;
-			transform: translateY(-50%);
-			width: calc(100% + 6px);
-			height: 1px;
-			background-color: #2daae0da;
-			// text-decoration: line-through #2daae080 2px;
-		}
-		button {
-			opacity: 1;
-		}
-	}
+  .store-item__description {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .store-item__points {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 2px;
+    #price {
+      position: relative;
+    }
+    #points {
+      color: #2da9e0;
+      margin: 15px auto 0;
+    }
+  }
+  button {
+    // margin-top: 20px;
+    opacity: 0.55;
+  }
+  &.eligable {
+    #price::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -3px;
+      transform: translateY(-50%);
+      width: calc(100% + 6px);
+      height: 1px;
+      background-color: #2daae0da;
+      // text-decoration: line-through #2daae080 2px;
+    }
+    button {
+      opacity: 1;
+    }
+  }
 }
 
-.modal .icon-wrapper {
-	position: relative;
-	svg {
-		display: block;
-		height: 40px;
-		margin: 0 auto;
-		margin-bottom: 15px;
-	}
+.modal.store-item-modal {
+  background-color: #fff;
+  .modal__content {
+    padding: 45px 20px;
+    .point-value {
+      font-weight: bold;
+      color: #2da9e0;
+    }
+
+    .confirm-text {
+      font-size: 18px;
+      line-height: 1.5em;
+      color: #333;
+    }
+    .buttons-container {
+      position: relative;
+      display: flex;
+      // padding: 10px;
+      margin-top: 40px;
+      &.redemption-success {
+        flex-direction: column;
+
+        h3 {
+          font-weight: 600;
+          text-align: center;
+          font-size: 16px;
+        }
+        button {
+          margin: 10px 0;
+        }
+      }
+      button {
+        margin: 0 10px;
+      }
+    }
+    .promo-code {
+      margin: 0 30px 20px;
+      .warning {
+        font-size: 16px;
+        font-style: italic;
+
+        margin-bottom: 45px;
+      }
+      .content {
+        font-size: 16px;
+        border: 3px dashed #2da9e0;
+        border-radius: 6px;
+        padding: 25px 15px;
+        line-height: 1.53em;
+        .code-number {
+          font-weight: bold;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            bottom: 1px;
+            background: #616c70;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  button.small.cancel-btn {
+    background-color: #dbdbdb;
+  }
+  .icon-wrapper {
+    position: relative;
+    svg {
+      display: block;
+      height: 54px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      color: #2da9e0;
+      fill: #2da9e0;
+    }
+  }
 }

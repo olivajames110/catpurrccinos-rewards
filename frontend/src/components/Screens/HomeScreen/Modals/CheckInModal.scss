@@ -1,0 +1,114 @@
+.check-in-modal {
+  .cancel {
+    color: #fff;
+  }
+  .check-in-success {
+    position: relative;
+    // background-color: #fff;
+    // max-width: 480px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 auto;
+    overflow: hidden;
+    h1,
+    h2,
+    h3,
+    div,
+    span,
+    p {
+      text-shadow: none;
+    }
+    .success__header {
+      background-color: #616c70;
+      padding: 20px;
+
+      h1 {
+        font-size: 32px;
+        line-height: 30px;
+      }
+      p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.5em;
+        padding: 0 20px;
+        font-weight: 300;
+      }
+      .icon-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        svg {
+          display: block;
+          height: 50px;
+          fill: #fff;
+        }
+      }
+    }
+    .success__body {
+      position: relative;
+      padding-bottom: 20px;
+      background-color: #fff;
+      .new-points {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        font-weight: bold;
+        opacity: 0.8;
+        h3,
+        h3 span {
+          color: #616c70;
+
+          font-size: 36px;
+          line-height: 42px;
+        }
+        span {
+          font-weight: bold;
+          color: #606161;
+          text-shadow: none;
+          font-size: 16px;
+        }
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // margin-top: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.217);
+        padding-top: 20px;
+        .stat-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .stat-item__value {
+            font-size: 18px;
+            color: #333;
+          }
+          .stat-item__description {
+            font-size: 15px;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 600px) {
+// 	.main-display__bottom-section {
+// 		min-height: 50vh;
+// 	}
+// }
+
+@media only screen and (max-width: 600px) {
+  .phone-number-input-container button {
+    margin-top: 5px;
+  }
+  .phone-number-input-container .error-message {
+    bottom: -54px !important;
+    left: 50% !important;
+    width: 80% !important;
+  }
+}

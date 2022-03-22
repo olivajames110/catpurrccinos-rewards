@@ -4,16 +4,17 @@
 
 #user-profile-section .screen-content {
   background-color: #fff;
-  margin-top: 30px;
-  max-width: 800px;
-  margin: 50px auto 0;
-  padding: 50px;
+  max-width: 620px;
+  margin: 15px auto 0;
+  padding: 40px 20px;
 }
 
 #user-profile-section .screen-content h2 {
   color: #333;
   text-shadow: none;
   margin-bottom: 20px;
+  text-align: left;
+  font-size: 18px;
 }
 
 #user-profile-section nav {
@@ -61,11 +62,25 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 660px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #user-profile-section .list-item-container .list-item-row:first-child {
   border-top: none;
+}
+
+#user-profile-section .list-item-container .list-item-row.empty {
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 /*# sourceMappingURL=UserProfileScreen.css.map */

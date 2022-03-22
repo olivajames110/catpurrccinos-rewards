@@ -2,20 +2,30 @@
   background: #fff;
   margin: 10px;
   border-radius: 2px;
-  padding: 10px 8px;
+  padding: 15px;
   text-align: center;
+  width: 180px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 280px;
 }
 
 .store-item-wrapper h2 {
   font-size: 16px;
   color: #333;
+  margin-top: 15px;
   text-shadow: none;
   margin-bottom: 0;
 }
 
 .store-item-wrapper .store-item__description {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
+  margin-top: 10px;
 }
 
 .store-item-wrapper .store-item__points {
@@ -38,15 +48,15 @@
 
 .store-item-wrapper .store-item__points #points {
   color: #2da9e0;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 
 .store-item-wrapper button {
-  opacity: .55;
+  opacity: 0.55;
 }
 
 .store-item-wrapper.eligable #price::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -3px;
@@ -61,14 +71,101 @@
   opacity: 1;
 }
 
-.modal .icon-wrapper {
+.modal.store-item-modal {
+  background-color: #fff;
+}
+
+.modal.store-item-modal .modal__content {
+  padding: 45px 20px;
+}
+
+.modal.store-item-modal .modal__content .point-value {
+  font-weight: bold;
+  color: #2da9e0;
+}
+
+.modal.store-item-modal .modal__content .confirm-text {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #333;
+}
+
+.modal.store-item-modal .modal__content .buttons-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.modal.store-item-modal .modal__content .buttons-container.redemption-success {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal.store-item-modal .modal__content .buttons-container.redemption-success h3 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+
+.modal.store-item-modal .modal__content .buttons-container.redemption-success button {
+  margin: 10px 0;
+}
+
+.modal.store-item-modal .modal__content .buttons-container button {
+  margin: 0 10px;
+}
+
+.modal.store-item-modal .modal__content .promo-code {
+  margin: 0 30px 20px;
+}
+
+.modal.store-item-modal .modal__content .promo-code .warning {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+
+.modal.store-item-modal .modal__content .promo-code .content {
+  font-size: 16px;
+  border: 3px dashed #2da9e0;
+  border-radius: 6px;
+  padding: 25px 15px;
+  line-height: 1.53em;
+}
+
+.modal.store-item-modal .modal__content .promo-code .content .code-number {
+  font-weight: bold;
   position: relative;
 }
 
-.modal .icon-wrapper svg {
+.modal.store-item-modal .modal__content .promo-code .content .code-number::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 1px;
+  background: #616c70;
+  left: 0;
+  width: 100%;
+}
+
+.modal.store-item-modal button.small.cancel-btn {
+  background-color: #dbdbdb;
+}
+
+.modal.store-item-modal .icon-wrapper {
+  position: relative;
+}
+
+.modal.store-item-modal .icon-wrapper svg {
   display: block;
-  height: 40px;
+  height: 54px;
   margin: 0 auto;
   margin-bottom: 15px;
+  color: #2da9e0;
+  fill: #2da9e0;
 }
 /*# sourceMappingURL=StoreItem.css.map */

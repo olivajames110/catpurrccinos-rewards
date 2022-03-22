@@ -13,10 +13,10 @@ const PhoneNumberInput = (props) => {
   const [value, setValue] = React.useState();
   const { isLoading, error, sendRequest, clearError } = useHttpClient();
   const onClickHandler = () => {
-    console.log(value.length);
+    // console.log(value.length);
 
     if (value === undefined || value.length !== 12) {
-      console.log("more");
+      // console.log("more");
       setIsError(true);
       return;
     }
@@ -31,14 +31,14 @@ const PhoneNumberInput = (props) => {
       const responseData = await sendRequest(
         `${process.env.REACT_APP_BACKEND_URL}/user/wake`
       );
-      console.log("responseData", responseData);
+      // console.log("responseData", responseData);
     } catch (err) {
       console.log("error");
     }
   };
 
   const setValueHandler = (num) => {
-    checkIfAwake();
+    // checkIfAwake();
     if (!value) {
       setValue(`+1${num}`);
     }
@@ -46,7 +46,7 @@ const PhoneNumberInput = (props) => {
     if (value && value.length <= 11) {
       let numbers = value.concat(num);
       setValue(numbers);
-      console.log(numbers);
+      // console.log(numbers);
     }
     // setValue(s=> s + num)
   };
@@ -91,7 +91,7 @@ const PhoneNumberInput = (props) => {
   );
 
   return (
-    <React.Fragment activeClassName="nav-link__active" to="/store" exact>
+    <React.Fragment>
       <div className="phone-number-input-container">
         <label htmlFor="phone" />
         <Input
@@ -102,7 +102,7 @@ const PhoneNumberInput = (props) => {
         />
         {isError && (
           <p className="error-message">
-            Please enter your full 9 digit phone number excluding your area code
+            Please enter your full 9 digit phone number including your area code
           </p>
         )}
         <NavLink
@@ -123,7 +123,7 @@ const PhoneNumberInput = (props) => {
     </React.Fragment>
   );
 };
-
+// activeClassName="nav-link__active" to="/store" exact
 export default PhoneNumberInput;
 const rightArrow = (
   <svg
